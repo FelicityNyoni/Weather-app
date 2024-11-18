@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
     <div class="body">
     <header>
-<form action="">
-    <input type="text" placeholder="Enter city ..." required>
-    <input type="submit" value="Search">
+<form action="" class="search-form" id="search-form">
+    <input 
+    type="text" 
+    placeholder="Enter city ..." 
+    required
+    class="search-form-input"
+    id="search-form-input" />
+    <input type="submit" value="Search" class="search-form-button" />
 </form>
 </header>
 <main>
-    <h1>
-        Paris
-    </h1>
-    <div>
-    <p>
-        Monday 12:39, scattered clouds <br />
-        Humidity: 66%, Wind: 3.13km/h
-    </p>
-</div>
-<div>
-    🌤️12℃
-</div>
+    <div class="weather-app-data">
+        <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+                <span id="time">Monday 14:25, scattered clouds</span>,
+                <span id="description"></span>
+                <br />
+                Humidity: 66%<strong id="humidity"></strong>, Wind: 3.13km/h
+                <strong id="wind-speed"></strong>
+            </p>
+        </div>
+        <div class="weather-app-temperature-container">
+            <div id="icon">🌤️</div>
+            <div class="weather-app-temperature" id="temperature">12</div>
+            <div class="weather-app-unit">°C</div>
+        </div>
+    </div>
+</main>
 <footer>
     This project was coded by 
     <a href="https://github.com/FelicityNyoni" target="_blank">Felicity</a> is 
     <a href="https://github.com/FelicityNyoni/Weather-app" target="_blank">opend-sourced on GitHub</a> and 
     <a href="https://felicity-weather-app.netlify.app/" target="_blank">hoted on Netlify.</a>
 </footer>
-</main>
 </div>
 </body>
 </html>
