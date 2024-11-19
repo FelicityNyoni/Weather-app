@@ -73,14 +73,16 @@ margin: 0;
     .weather-app-unit {
         font-size: 30px;
         position: relative;
-        bottom: -30px;
+        bottom: -10px;
     }
 
-    #icon {
-        font-size: 30px;
+    .weather-icon{
+        width: 80px;
+        height: 80px;
         position: relative;
-        bottom: -60px;
+        bottom: -40px;
     }
+
 
     #humidity {
         color: rgb(232, 129, 166);
