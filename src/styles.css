@@ -83,6 +83,31 @@ margin: 0;
         bottom: -40px;
     }
 
+    .weather-forecast {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .weather-forecast-day {
+        text-align: center;
+    }
+
+    .weather-forecast-icon {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .weather-forecast-temperature {
+        padding-left: 10px;
+    }
+
+    .weather-forecast-temperatures {
+        color:rgb(232, 129, 166);
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
 
     #humidity {
         color: rgb(232, 129, 166);
